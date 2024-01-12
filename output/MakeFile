@@ -1,0 +1,6 @@
+source: source.o
+     ld -macosx_version_min 11.0.0 -o source source.o -lSystem -syslibroot
+             `xcrun -sdk macosx --show-sdk-path` -e _start -arch arm64 
+
+source.o: source.s
+     as -o source.o source.s

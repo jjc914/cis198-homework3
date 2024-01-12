@@ -1,0 +1,16 @@
+[package]
+name = "homework3"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+regex = "1.10.2"
+serde = { version = "1.0.193", features = ["derive", "rc"] }
+serde_json = "1.0.108"
+structopt = "0.3.26"
+
+[[bin]]
+name = "homework3"
+path = "src/main.rs"
